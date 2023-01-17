@@ -1,5 +1,5 @@
 {
-  "name": "svaml",
+  "name": "@therandonauts/svaml",
   "version": "0.2.3",
   "description": "Yaml preprocessor for svelte",
   "main": "dist/main.cjs",
@@ -27,13 +27,11 @@
     "@types/node": "^18.11.18",
     "js-yaml": "^3.13.1",
     "rollup-plugin-dts": "^5.1.1",
-    "svelte": "^3.14.1"
+    "svelte": "^3.14.1",
+    "yaml": "^2.2.1"
   },
   "peerDependencies": {
     "svelte": "3.x"
-  },
-  "dependencies": {
-    "yaml": "^2.2.1"
   },
   "author": "Taha Firoz <randonautsapi@gmail.com>",
   "license": "GPLv3"
