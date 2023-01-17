@@ -1,0 +1,40 @@
+{
+  "name": "svaml",
+  "version": "0.2.3",
+  "description": "Yaml preprocessor for svelte",
+  "main": "dist/main.cjs",
+  "type": "module",
+  "files": [
+    "dist/*"
+  ],
+  "kseywords": [
+    "test",
+    "preprocessor",
+    "yaml",
+    "yml",
+    "svelte",
+    "kit"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "24.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-sucrase": "^5.0.1",
+    "@types/js-yaml": "^3.12.5",
+    "@types/node": "^18.11.18",
+    "js-yaml": "^3.13.1",
+    "rollup-plugin-dts": "^5.1.1",
+    "svelte": "^3.14.1"
+  },
+  "peerDependencies": {
+    "svelte": "3.x"
+  },
+  "dependencies": {
+    "yaml": "^2.2.1"
+  },
+  "author": "Taha Firoz <randonautsapi@gmail.com>",
+  "license": "GPLv3"
+}
