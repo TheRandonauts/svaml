@@ -24,12 +24,13 @@ export function svaml(name?:string, extensions?:string[]):PreprocessorGroup {
 			const fileExt =  path_parse(filename).ext
 			const fileName = basename(filename, fileExt);
 			if (yaml_extensions.includes(fileExt)) {
-				const parsed_yaml = {...parse(content), doc_path: fileName}
+				const parsed_yaml = {...parse(content)}
 
 				return {
 					code: `
 					<script context="module">
                         export const ${exported_name} = ${JSON.stringify(parsed_yaml)}
+						export const file_name = "${fileName}"
 					</script>
 					`,
 					map:''
